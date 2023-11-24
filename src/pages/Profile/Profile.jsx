@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Profile.css";
 
 import { CustomInput } from "../../common/CustomInput/CustomInput";
-import { validator } from "../../services/useful";
+import { validator } from "../../services/effective";
 
 
 import { useSelector } from "react-redux";

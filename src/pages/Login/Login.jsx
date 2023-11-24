@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Login.css";
 import { CustomInput } from "../../common/CustomInput/CustomInput";
-import { validator } from "../../services/useful";
+import { validator } from "../../services/effective";
 import { logUser } from "../../services/apiCalls";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";

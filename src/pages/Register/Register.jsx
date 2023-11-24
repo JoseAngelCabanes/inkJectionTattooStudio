@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Register.css";
 import { CustomInput } from "../../common/CustomInput/CustomInput";
-import { validator } from "../../services/useful";
+import { validator } from "../../services/effective";
 import { registerUser } from "../../services/apiCalls";
 import { useNavigate } from 'react-router-dom';
 
