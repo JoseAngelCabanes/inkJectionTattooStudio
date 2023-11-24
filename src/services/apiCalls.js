@@ -41,7 +41,7 @@ export const deleteMyDates = async (credentials) => {
         headers: { Authorization: `Bearer ${credentials}` }})
     }
 
-export const getAllCustomers = async (credentials) => {
+export const getAllClients = async (credentials) => {
     return await axios.get('http://localhost:5050/tattoo_artist/clients', {
         headers: { Authorization: `Bearer ${credentials}` }})
     }
