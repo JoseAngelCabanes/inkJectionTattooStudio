@@ -1,38 +1,60 @@
-
 import axios from 'axios';
-
-const API_KEY_TMDB = '210d6a5dd3f16419ce349c9f1b200d6d';
-const ROOT_API_TMDB = 'https://api.themoviedb.org/3/';
-
-export const bringCharacters = async () => {
-
-    return await axios.get(`https://rickandmortyapi.com/api/character/?page=6`);
-}
 
 export const logUser = async (body) => {
 
-    let user = {
-        username : body.email,
-        password: body.password
-    }
-    //SIMULACRO DE CONEXION REAL A API
-    return await axios.post(`https://dummyjson.com/auth/login`, user);
+    return await axios.post(`http://localhost:5050/client/login`, body);
+}
 
+export const logArtist = async (body) => {
+
+    return await axios.post(`http://localhost:5050/tattoo_artist/login`, body);
 }
 
 export const registerUser = async (body) => {
-    //SIMULACRO DE CONEXION REAL A API
-    // return await axios.post(`elendpointdemipreciosobackend`, body);
-    return "todo ha ido bien"
+
+    return await axios.post(`http://localhost:5050/client/register`, body);
 }
 
-export const searchMovie = async (criteria) => {
+export const bringTattoo = async () => {
 
-    return await axios.get(`${ROOT_API_TMDB}search/movie?query=${criteria}&include_adult=false&language=en-US&page=1&api_key=${API_KEY_TMDB}`)
+    return await axios.get(`http://localhost:5050/portfolio/all`);
 }
 
-export const latestMovie = async () => {
+export const bringProfile = async () => {
 
-    return await axios.get(`${ROOT_API_TMDB}trending/movie/day?language=en-US&page=1&api_key=${API_KEY_TMDB}`)
+    return await axios.get(`https://localhost:5050/client/profile`);
 }
 
+export const bringArtistProfile = async () => {
+
+    return await axios.get(`https://localhost:5050/tattoo_artist/profile`);
+}
+
+export const myDates = async (credentials) => {
+    console.log("token", credentials);
+    return await axios.get('http://localhost:5050/client/appointment/', {
+      headers: { Authorization: `Bearer ${credentials}` }})
+    }
+
+export const deleteMyDates = async (credentials) => {
+    return await axios.delete('http://localhost:5050/appoiments/delete', {
+        headers: { Authorization: `Bearer ${credentials}` }})
+    }
+
+export const getAllCustomers = async (credentials) => {
+    return await axios.get('http://localhost:5050/tattoo_artist/clients', {
+        headers: { Authorization: `Bearer ${credentials}` }})
+    }
+
+export const getAllAppointments = async (credentials) => {
+    return await axios.get('http://localhost:5050/tattoo_artist/appointment', {
+         headers: { Authorization: `Bearer ${credentials}` }})
+    }
+
+export const appointments = async (token, appointmentData) => {
+    return await axios.post("http://localhost:5050/appoiments/create", appointmentData,
+        {
+        headers: { Authorization: `Bearer ${token}` },
+        }
+    );
+};

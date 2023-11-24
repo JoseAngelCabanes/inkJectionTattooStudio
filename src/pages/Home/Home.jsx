@@ -1,39 +1,20 @@
-import React, { useState, useEffect } from "react";
-import "./Home.css";
-import { bringCharacters } from "../../services/apiCalls";
-import { Container, Row, Col } from "react-bootstrap";
-
+import React from 'react';
+import './Home.css'
+import HoursAddressCard from '../../common/HoursAddress/HoursAddress';
 export const Home = () => {
-  const [characters, setCharacters] = useState([]);
-
-  useEffect(() => {
-    if (characters.length === 0) {
-      bringCharacters()
-        .then((results) => {
-          setCharacters(results.data.results);
-        })
-        .catch((error) => console.log(error));
-    }
-  }, [characters]);
-
-  return (
-    <div className="homeDesign">
-      {characters.length > 0 ? (
-        <Container>
-          <Row>
-            {characters.map((character) => {
-              return (
-                <Col sm={12} lg={6} xl={2} xxl={2} key={character.id}>
-                  {/* {character.name} */}
-                  <img className='avatarCharacter' src={character.image} alt={character.name} />
-                </Col>
-              );
-            })}
-          </Row>
-        </Container>
-      ) : (
-        <div>aun no han venido</div>
-      )}
-    </div>
-  );
-};
+     return (
+         <div className="homeDesign">
+            <div className='LeftHome'>
+                <div className='HADivider'>
+                    <HoursAddressCard title="HOURS" text="MON-FRI" subtext="8:00-:14:00" />
+                </div>
+                <div className='HADivider'>
+                    <HoursAddressCard title="ADDRESS" text="CW CANADA" subtext="330 FIRST ST" />
+                </div>
+            </div>
+            <div className='RightHome'>
+                <img src='src\img\tattoo_machines_design__28color_29-removebg-preview.png'></img>
+            </div>
+         </div>
+     )
+}

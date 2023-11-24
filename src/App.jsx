@@ -1,14 +1,15 @@
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from './common/Header/Header'
 import { Body } from './pages/Body/Body'
+import { Navbar } from './common/navbar/navbar'
+
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Navbar />
       <Body />
     </>
   )
