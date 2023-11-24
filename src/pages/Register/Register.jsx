@@ -62,8 +62,7 @@ export const Register = () => {
     registerUser(user)
       .then(
         resultado => {
-          //si todo ha ido bien, redirigiremos a login...
-
+        
           setTimeout(()=>{
             navigate("/login");
           },500)
@@ -103,7 +102,6 @@ export const Register = () => {
         type={"email"}
         name={"email"}
         placeholder={""}
-        // value={}
         functionProp={functionHandler}
         functionBlur={errorCheck}
       />
@@ -114,7 +112,6 @@ export const Register = () => {
         type={"password"}
         name={"password"}
         placeholder={""}
-        // value={}
         functionProp={functionHandler}
         functionBlur={errorCheck}
       />
