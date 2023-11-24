@@ -8,7 +8,7 @@ import { Portfolio } from '../Portfolio/Portfolio';
 import { About } from '../About/about';
 import { LoginArtist } from '../ArtistLogin/ArtistLogin';
 import { MyDates } from '../MyDates/MyDates';
-import { AllCustomers } from '../AllCustomers/AllCustomers';
+import { AllClients } from '../AllClients/AllClients';
 import { AllAppointments } from '../AllAppointments/AllAppointments';
 import { Appointments } from '../Appointments/appointments';
 export const Body = () => {
@@ -23,7 +23,7 @@ export const Body = () => {
                 <Route path="/about" element={<About />}/>
                 <Route path="/loginworker" element={<LoginArtist />}/>
                 <Route path="/mydates" element={<MyDates />}/>
-                <Route path="/allcustomers" element={<AllCustomers />}/>
+                <Route path="/allcclients" element={<AllClients />}/>
                 <Route path="/allappointments" element={<AllAppointments />}/>
                 <Route path="/appointments" element={<Appointments />}/>
 
