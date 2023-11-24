@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Login.css";
 import { CustomInput } from "../../common/CustomInput/CustomInput";
+import { validator } from "../../services/useful";
 import { logUser } from "../../services/apiCalls";
 import { useNavigate } from 'react-router-dom';
-
-//Importo Rdx
-
-import { useDispatch } from "react-redux";  //useDispatch es necesario para emitir acciones
+import { useDispatch } from "react-redux";
 import { login } from "../userSlice";
 
 export const Login = () => {
@@ -30,23 +28,16 @@ export const Login = () => {
   };
 
   const errorCheck = () => {
-    console.log("ha ha ha ha");
   }
-
-//   useEffect(()=>{
-//     console.log(credenciales);
-//   },[credenciales]);
 
   const logMe = () => {
 
     logUser(credenciales)
         .then(
             resultado => {
-                console.log(resultado)
-                //Aqui guardaría el token........en RDXXX
                 dispatch(login({ credentials: resultado.data }))
+                console.log(resultado.data.token);
 
-                //Una vez guardado el token....nos vamos a home....
                 setTimeout(()=>{
                     navigate("/");
                 },500);
@@ -61,6 +52,8 @@ export const Login = () => {
 
   return (
     <div className="loginDesign">
+      <div className="containerLogin">
+      <div className='field'>EMAIL</div>
       <CustomInput
         design={"inputDesign"}
         type={"email"}
@@ -68,8 +61,9 @@ export const Login = () => {
         placeholder={""}
         // value={}
         functionProp={functionHandler}
-        functionBlur={errorCheck}
+        // onBlur={}
       />
+      <div className='field'>PASSWORD</div>
       <CustomInput
         design={"inputDesign"}
         type={"password"}
@@ -77,10 +71,13 @@ export const Login = () => {
         placeholder={""}
         // value={}
         functionProp={functionHandler}
-        functionBlur={errorCheck}
+        // onBlur={}
       />
-      <div className='buttonSubmit' onClick={logMe}>Log Me!</div>
-      <div>{msgError}</div>
+      <div className="buttonsLogin">
+      <a href="loginworker"><div className='buttonSubmit'>ARTISTS</div></a>
+       <div className='buttonSubmit' onClick={logMe}>LOG IN</div>
+      </div>
+      </div>
     </div>
   );
 };

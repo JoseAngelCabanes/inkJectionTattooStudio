@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Register.css";
-
 import { CustomInput } from "../../common/CustomInput/CustomInput";
 import { validator } from "../../services/useful";
 import { registerUser } from "../../services/apiCalls";
@@ -12,16 +11,16 @@ export const Register = () => {
 
   const [user, setUser] = useState({
     name: '',
+    surname: '',
     email: '',
-    password: '',
-    phone: ''
+    password: ''
   })
 
   const [userError, setUserError] = useState({
     nameError: '',
+    surnameError: '',
     emailError: '',
-    passwordError: '',
-    phoneError: ''
+    passwordError: ''
   })
 
 
@@ -48,6 +47,7 @@ export const Register = () => {
 
     for(let test1 in user){
       if(user[test1] === ""){
+
         return;
       }
 
@@ -74,6 +74,30 @@ export const Register = () => {
 
   return (
     <div className="registerDesign">
+      <div className="registerContainer">
+      <div className='field'>NAME</div>
+        <CustomInput
+        design={`inputDesign ${userError.nameError !== "" ? 'inputDesignError' : ''}`}
+        type={"text"}
+        name={"name"}
+        placeholder={""}
+        // value={}
+        functionProp={functionHandler}
+        functionBlur={errorCheck}
+      />
+      <div className='errorMsg'>{userError.nameError}</div>
+      <div className='field'>SURNAME</div>
+      <CustomInput
+        design={`inputDesign ${userError.surnameError !== "" ? 'inputDesignError' : ''}`}
+        type={"text"}
+        name={"surname"}
+        placeholder={""}
+        // value={}
+        functionProp={functionHandler}
+        functionBlur={errorCheck}
+      />
+      <div className='errorMsg'>{userError.surnameError}</div>
+      <div className='field'>EMAIL</div>
       <CustomInput
         design={`inputDesign ${userError.emailError !== "" ? 'inputDesignError' : ''}`}
         type={"email"}
@@ -84,6 +108,7 @@ export const Register = () => {
         functionBlur={errorCheck}
       />
       <div className='errorMsg'>{userError.emailError}</div>
+      <div className='field'>PASSWORD</div>
       <CustomInput
         design={`inputDesign ${userError.passwordError !== "" ? 'inputDesignError' : ''}`}
         type={"password"}
@@ -94,27 +119,8 @@ export const Register = () => {
         functionBlur={errorCheck}
       />
       <div className='errorMsg'>{userError.passwordError}</div>
-      <CustomInput
-        design={`inputDesign ${userError.nameError !== "" ? 'inputDesignError' : ''}`}
-        type={"text"}
-        name={"name"}
-        placeholder={""}
-        // value={}
-        functionProp={functionHandler}
-        functionBlur={errorCheck}
-      />
-      <div className='errorMsg'>{userError.nameError}</div>
-      <CustomInput
-        design={`inputDesign ${userError.phoneError !== "" ? 'inputDesignError' : ''}`}
-        type={"text"}
-        name={"phone"}
-        placeholder={""}
-        // value={}
-        functionProp={functionHandler}
-        functionBlur={errorCheck}
-      />
-      <div className='errorMsg'>{userError.phoneError}</div>
-      <div className='buttonSubmit' onClick={Submit}>Submit</div>
+      <div className='buttonSubmit' onClick={Submit}>REGISTER</div>
+      </div>
     </div>
   );
 };

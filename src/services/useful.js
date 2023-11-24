@@ -1,4 +1,3 @@
-
 export const validator = (type, value) => {
 
     switch(type){
@@ -14,6 +13,13 @@ export const validator = (type, value) => {
             }
         
         case 'name':
+
+            if(value.length > 25){
+                return "Escribe un nombre correcto"
+            } else {
+                return ""
+            }
+
         case 'surname':
 
             if(value.length > 25){
@@ -35,13 +41,12 @@ export const validator = (type, value) => {
         case 'password2':
         case 'contraseña':
 
-            if(value.length < 8){
-                return "Write 8 characters at least"
+            if(value.length <= 4){
+                return "Write 4 characters at least"
             } else {
 
-                //Checking the password format....
 
-                if (! /[\d()+-]/g.test(value) ) {
+                if (! /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z!@#$%^&*]{4,12}$/g.test(value) ) {
                     return "Invalid password format";
                 } else {
                     return "";
