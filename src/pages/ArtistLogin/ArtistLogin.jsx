@@ -27,10 +27,6 @@ export const LoginArtist = () => {
     }));
   };
 
-  // const errorCheck = () => {
-  //   console.log("");
-  // }
-
   const logMe = () => {
 
     logArtist(credenciales)
