@@ -1,0 +1,48 @@
+.appointmentsDesign {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../../img/model3.jpg);
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.containerAppointment{
+    height: 20em;
+    width: 20em;
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+
+    opacity: 95%;
+
+    border-radius: 2em;
+
+    border: solid brown 0.25em;
+
+}
+
+.title{
+    margin-bottom: 0.25em;
+
+    color: wheat;
+}
+
+.inputAppointment{
+    margin-bottom: 2em;
+}
+
+.buttonAppointments{
+    color: beige;
+}
