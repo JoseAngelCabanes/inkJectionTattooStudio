@@ -47,7 +47,6 @@ export const Print = ({ appo }) => {
     try {
       await deleteMyDates(datosRdxUser.credentials.token);
   
-      // Después de la eliminación, actualiza los datos volviendo a llamar a myDates
       const updatedData = await myDates(datosRdxUser.credentials);
       setUpdatedAppointments(updatedData.data);
       fetchData();
