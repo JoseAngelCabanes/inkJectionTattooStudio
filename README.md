@@ -46,16 +46,16 @@ El repositorio está organizado de la siguiente manera:
 
 ## Views
 Home
-![Home](../inkJectiontattooStudio/src/img/readme1.png)
+![Home](./src/img/readme1.png)
 
 About
-![About](../inkJectiontattooStudio/src/img/readme2.png)
+![About](./src/img/readme2.png)
 
 Register
-![Register](../inkJectiontattooStudio/src/img/readme3.png)
+![Register](./src/img/readme3.png)
 
 Login
-![Login](../inkJectiontattooStudio/src/img/readme4.png)
+![Login](./src/img/readme4.png)
 
 
 ## Contribuciones
