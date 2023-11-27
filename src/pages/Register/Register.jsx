@@ -80,7 +80,6 @@ export const Register = () => {
         type={"text"}
         name={"name"}
         placeholder={""}
-        // value={}
         functionProp={functionHandler}
         functionBlur={errorCheck}
       />
@@ -91,7 +90,6 @@ export const Register = () => {
         type={"text"}
         name={"surname"}
         placeholder={""}
-        // value={}
         functionProp={functionHandler}
         functionBlur={errorCheck}
       />

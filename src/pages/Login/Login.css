@@ -18,7 +18,7 @@
 
 .containerLogin{
     height: 40vh;
-    width: 25vw;
+    width: 30vw;
 
     margin-top: 3em;
 
@@ -29,9 +29,9 @@
 
     background-color: grey;
 
-    opacity: 95%;
+    opacity: 85%;
 
-    border-radius: 2em;
+    border-radius: 10%;
 
     border: solid blue 0.25em;
 }

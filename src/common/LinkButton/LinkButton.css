@@ -1,4 +1,4 @@
-.inputDesign {
+.linkButtonDesign {
 
     height: 2em;
     width: 15em;
@@ -8,11 +8,16 @@
 
     margin-bottom: 2.5em;
     margin-top: 0.2em;
+     
 }
 
 .inputDesign:hover{
     transition: 0.75s;
     box-shadow: 0em 0em 1em cyan;
+}
+
+.linkButtonDesign:hover{
+    cursor: pointer;
 }
 
 .inputDesign:not(:hover){
