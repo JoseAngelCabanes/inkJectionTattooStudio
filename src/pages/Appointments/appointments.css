@@ -23,13 +23,13 @@
     justify-content: center;
     align-items: center;
     
-    background-color: black;
+    background-color: grey;
 
     opacity: 95%;
 
     border-radius: 2em;
 
-    border: solid brown 0.25em;
+    border: solid blue 0.25em;
 
 }
 
@@ -44,5 +44,5 @@
 }
 
 .buttonAppointments{
-    color: beige;
+    color: cyan;
 }

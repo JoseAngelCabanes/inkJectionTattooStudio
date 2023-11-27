@@ -4,7 +4,7 @@
     width: 15em;
 
     border-radius: 0.5em;
-    border: 0.1em solid brown;
+    border: 0.1em solid blue;
 
     margin-bottom: 2.5em;
     margin-top: 0.2em;
@@ -12,7 +12,7 @@
 
 .inputDesign:hover{
     transition: 0.75s;
-    box-shadow: 0em 0em 1em beige;
+    box-shadow: 0em 0em 1em cyan;
 }
 
 .inputDesign:not(:hover){
@@ -21,7 +21,7 @@
 
 .inputDesign:focus{
     transition: 1s;
-    box-shadow: 0em 0em 2em beige;
+    box-shadow: 0em 0em 2em cyan;
 }
 
 .inputDesign:not(:focus){
@@ -30,6 +30,6 @@
 
 .inputDesignError {
 
-    border: 0.2em brown;
+    border: 0.2em blue;
 
 }

@@ -5,15 +5,11 @@ export const Home = () => {
      return (
          <div className="homeDesign">
             <div className='LeftHome'>
-                <div className='HADivider'>
-                    <HoursAddressCard title="HOURS" text="MON-FRI" subtext="8:00-:14:00" />
-                </div>
-                <div className='HADivider'>
-                    <HoursAddressCard title="ADDRESS" text="CW CANADA" subtext="330 FIRST ST" />
-                </div>
+            <img src='src\img\logo.jpg'></img>
+                
             </div>
             <div className='RightHome'>
-                <img src='src\img\tattoo_machines_design__28color_29-removebg-preview.png'></img>
+                <img src='src\img\landingpage.jpg'></img>
             </div>
          </div>
      )

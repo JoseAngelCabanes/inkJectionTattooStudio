@@ -1,11 +1,11 @@
 table{
     width: 50em;
 
-    background-color: black;
+    background-color: grey;
 
     opacity: 95%;
 
-    border: solid brown 0.25em;
+    border: solid blue 0.25em;
 }
 th{
     padding-right: 2em;
@@ -23,7 +23,7 @@ td{
     width: 4em;
 
     border-radius: 1em;
-    background-color: black;
+    background-color: grey;
     color: white;
     font-weight: bolder;
 
@@ -37,9 +37,9 @@ td{
 .delete:hover {
 
     transition: 0.75s;
-    background-color: brown;
+    background-color: blue;
     cursor: pointer;
-    box-shadow: 0em 0em 1em brown;
+    box-shadow: 0em 0em 1em blue;
 
 }
 .delete:not(:hover){

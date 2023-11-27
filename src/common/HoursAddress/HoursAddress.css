@@ -6,9 +6,9 @@
 }
 
 .HoursAddressTitle{
-    color: beige;
+    color: cyan;
 
-    -webkit-text-stroke: 0.02em black;
+    -webkit-text-stroke: 0.02em grey;
 
 
     font-size: 1.2em;
@@ -18,7 +18,7 @@
 .HoursAddressText{
     color: white;
 
-    -webkit-text-stroke: 0.02em black;
+    -webkit-text-stroke: 0.02em grey;
 
 
     padding: 0em;
@@ -27,8 +27,8 @@
 }
 
 .HoursAddressSubtext{
-    color: black;
+    color: grey;
 
-    -webkit-text-stroke: 0.02em black;
+    -webkit-text-stroke: 0.02em grey;
 
 }

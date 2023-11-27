@@ -24,26 +24,15 @@
     align-items: start;
 }
 
-.HADivider{
-    height: 12vh;
-    width: 7vw;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    
-    margin-left: 1em;
-}
-
 .RightHome{
     height: 90vh;
     width: 50vw;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
 }
-
 p{
     margin: 0em;
 }

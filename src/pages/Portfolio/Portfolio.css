@@ -20,7 +20,7 @@
     height: 11.5em;
     width: 11.5em;
 
-    border: solid brown 0.25em;
+    border: solid blue 0.25em;
 
     border-radius: 1em;
 
@@ -36,6 +36,6 @@
     height: 12.5em;
     width: 12.5em;
 
-    box-shadow: 0em 0em 2em beige;
+    box-shadow: 0em 0em 2em cyan;
 
 }

@@ -24,13 +24,13 @@
     justify-content: center;
     align-items: center;
 
-    background-color: black;
+    background-color: grey;
 
     opacity: 95%;
 
     border-radius: 2em;
 
-    border: solid brown 0.25em;
+    border: solid blue 0.25em;
 
     color: wheat;
 }
@@ -58,8 +58,8 @@
 .editDesign:hover {
 
     transition: 0.75s;
-    background-color: brown;
-    box-shadow: 0em 0em 1em brown;
+    background-color: blue;
+    box-shadow: 0em 0em 1em blue;
 }
 
 .sendDesign {
@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: brown;
+    background-color: blue;
 
     color: white;
 
@@ -83,11 +83,11 @@
 .sendDesign:hover {
 
     transition: 0.3s;
-    background-color: beige;
+    background-color: cyan;
 }
 
 input:disabled{
-    color:black;
+    color:grey;
 
     background-color: wheat;
 }

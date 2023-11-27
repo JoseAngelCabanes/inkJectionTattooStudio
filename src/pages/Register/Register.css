@@ -26,13 +26,13 @@
     justify-content: center;
     align-items: center;
 
-    background-color: black;
+    background-color: grey;
 
     opacity: 95%;
 
     border-radius: 2em;
 
-    border: solid brown 0.25em;
+    border: solid blue 0.25em;
 }
 
 .field{
@@ -40,7 +40,7 @@
 }
 
 .errorMsg {
-    color: beige;
+    color: cyan;
 }
 
 .buttonSubmit {
@@ -49,7 +49,7 @@
     width: 8em;
 
     border-radius: 1em;
-    background-color: black;
+    background-color: grey;
     color: white;
     font-weight: bolder;
 
@@ -63,9 +63,9 @@
 .buttonSubmit:hover {
 
     transition: 0.75s;
-    background-color: brown;
+    background-color: blue;
     cursor: pointer;
-    box-shadow: 0em 0em 1em brown;
+    box-shadow: 0em 0em 1em blue;
 
 }
 .buttonSubmit:not(:hover){
