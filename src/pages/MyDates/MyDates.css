@@ -1,0 +1,29 @@
+.myDatesDesign{
+    background-color: cyan;
+
+    height: 90vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+
+    color: wheat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    background-image: url(../../img/warroom.jpg);
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2{
+    color: wheat;
+
+    text-decoration: underline;
+
+    margin-top: 1em;
+}

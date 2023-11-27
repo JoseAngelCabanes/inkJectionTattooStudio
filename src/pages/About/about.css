@@ -1,0 +1,25 @@
+body{
+    overflow-x: hidden;
+}
+
+.aboutDesign{
+    height: 90vh;
+    width: 100vw;
+
+    background-image: url(../../img/model1.jpg);
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5em;
+}
+
+.color{
+    font-size: 5em;
+    color: gold;
+}

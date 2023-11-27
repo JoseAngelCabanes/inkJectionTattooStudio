@@ -1,0 +1,38 @@
+.homeDesign {
+
+    height: 90vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../../img/model.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.LeftHome{
+    height: 90vh;
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.RightHome{
+    height: 90vh;
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+p{
+    margin: 0em;
+}

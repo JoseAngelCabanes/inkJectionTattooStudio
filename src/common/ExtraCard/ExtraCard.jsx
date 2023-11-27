@@ -20,9 +20,6 @@ export default function ExtraCard({logo, title, text, url}) {
                 {text}
             </p>
         </div>
-        <div className='ExtraCardUrl'>
-            <a href={url}>MORE ABOUT</a>
-        </div>
         </div>
     )
 }

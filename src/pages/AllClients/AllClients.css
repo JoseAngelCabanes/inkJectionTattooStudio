@@ -1,0 +1,19 @@
+.allClientsDesign{
+    background-image: url(../../img/model1.jpg);
+
+    height: 90vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+
+    color: wheat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

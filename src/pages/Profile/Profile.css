@@ -1,0 +1,93 @@
+.profileDesign {
+
+    height: 90vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../../img/model1.jpg");
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerProfile{
+    height: 50vh;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: grey;
+
+    opacity: 95%;
+
+    border-radius: 2em;
+
+    border: solid blue 0.25em;
+
+    color: wheat;
+}
+
+.editDesign {
+
+    height: 2em;
+    width: 8em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 1em;
+    border: solid wheat 0.1em;
+    transition: 0.75s;
+
+    font-size: 1.1em;
+}
+
+.editDesign:hover {
+
+    transition: 0.75s;
+    background-color: blue;
+    box-shadow: 0em 0em 1em blue;
+}
+
+.sendDesign {
+    height: 2em;
+    width: 10em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blue;
+
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 1em;
+    transition: 0.3s;
+}
+
+.sendDesign:hover {
+
+    transition: 0.3s;
+    background-color: cyan;
+}
+
+input:disabled{
+    color:grey;
+
+    background-color: wheat;
+}

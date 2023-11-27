@@ -1,0 +1,74 @@
+.ExtraCardDesign{
+
+    border: solid blue 0.25em;
+
+    background-color: grey;
+
+    height: 70vh;
+    width: 25vw;
+
+    max-height: 70vh;
+    max-width: 25vw;
+
+    opacity: 95%;
+
+    border-radius: 100em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+.ExtraCardDesign:hover{
+    transition: 0.75s;
+    
+    box-shadow: 0em 0em 2em cyan;
+}
+
+.ExtraCardDesign:not(:hover){
+    transition: 1.5s;
+    
+}
+
+.ExtraCardLogo{
+    height: 15vh;
+    width: 20vw;
+}
+
+.ExtraCardLogo img{
+    height: 100%;
+    width: 100%;
+}
+
+.ExtraCardTitle{
+    font-size: 2em;
+    color: cyan;
+
+}
+
+.ExtraCardText{
+    color:wheat;
+
+    font-size: 1em;
+}
+
+.ExtraCardUrl a{
+    color: blue;
+
+    font-size: 1.25em;
+}
+
+.ExtraCardUrl a:hover{
+    transition: 0.5s;
+
+    color: cyan;
+}
+
+.ExtraCardUrl :not(:hover){
+    transition: 0.5s;
+}

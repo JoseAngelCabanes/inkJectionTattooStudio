@@ -1,0 +1,52 @@
+.navbarDesign {
+
+    height: 10vh;
+    width: 100vw;
+
+    position: relative;
+
+    background-color: grey;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+.navbarPages {
+
+    height: 10vh;
+    width: 100vw;
+
+    background-color: grey;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    border-bottom: solid blue 0.3em;
+
+}
+
+.navbarProfile {
+
+    height: 10vh;
+    width: 100vw;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    font-weight: bold;
+
+    border-bottom: solid blue 0.3em;
+}
