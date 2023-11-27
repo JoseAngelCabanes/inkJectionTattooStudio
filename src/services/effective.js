@@ -7,7 +7,7 @@ export const validator = (type, value) => {
         case 'mail':
 
             if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(value) ) {
-                return "Invalid e-mail format";
+                return "Invalid email";
             } else {
                 return "";
             }
@@ -15,7 +15,7 @@ export const validator = (type, value) => {
         case 'name':
 
             if(value.length > 25){
-                return "Escribe un nombre correcto"
+                return "Write a proper name"
             } else {
                 return ""
             }
@@ -23,7 +23,7 @@ export const validator = (type, value) => {
         case 'surname':
 
             if(value.length > 25){
-                return "Escribe un nombre correcto"
+                return "Write a proper name"
             } else {
                 return ""
             }
